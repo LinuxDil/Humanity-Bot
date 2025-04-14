@@ -12,7 +12,7 @@ init(autoreset=True)
 def display_header():
     print(Fore.CYAN + Style.BRIGHT + "===============================")
     print(Fore.YELLOW + Style.BRIGHT + "Auto Daily Claim $RWT Humanity Protocol")
-    print(Fore.CYAN + Style.BRIGHT + "Bot created by: " + Fore.GREEN + "https://t.me/airdropseeker_official")
+    print(Fore.CYAN + Style.BRIGHT + "Bot created by: " + Fore.GREEN + "Bang Alex" Join Our Channel at: "https://t.me/airdropseeker_official")
     print(Fore.CYAN + Style.BRIGHT + "===============================\n")
 
 # Connect to the blockchain network
