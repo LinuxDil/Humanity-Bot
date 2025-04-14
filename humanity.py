@@ -117,15 +117,7 @@ def proceed_to_claim(sender_address, private_key):
 # Function to claim faucet tokens
 
 # Function to perform periodic task (including faucet claim)
-def perform_periodic_task():
-    while True:
-        private_keys = load_private_keys('private_keys.txt')
-        for private_key in private_keys:
-            # Derive the sender's address from the private key
-            account = web3.eth.account.from_key(private_key)
-            wallet_address = account.address
-            # Call the claim faucet function
-            claim_faucet(wallet_address)
+
             
             # Wait 1 minute before claiming for the next wallet
             print(Fore.CYAN + "Waiting 1 minute before claiming for the next wallet...")
