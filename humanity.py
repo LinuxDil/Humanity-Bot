@@ -12,7 +12,7 @@ init(autoreset=True)
 def display_header():
     print(Fore.CYAN + Style.BRIGHT + "===============================")
     print(Fore.YELLOW + Style.BRIGHT + "Auto Daily Claim $RWT Humanity Protocol")
-    print(Fore.CYAN + Style.BRIGHT + "Bot created by: " + Fore.GREEN + "https://t.me/airdropwithmeh")
+    print(Fore.CYAN + Style.BRIGHT + "Bot created by: " + Fore.GREEN + "https://t.me/airdropseeker_official")
     print(Fore.CYAN + Style.BRIGHT + "===============================\n")
 
 # Connect to the blockchain network
@@ -115,25 +115,6 @@ def proceed_to_claim(sender_address, private_key):
         print(Fore.RED + f"Error processing claim for {sender_address}: {str(e)}")
 
 # Function to claim faucet tokens
-def claim_faucet(wallet_address):
-    url = "https://faucet.testnet.humanity.org/api/claim"
-    payload = {
-        "address": wallet_address
-    }
-
-    try:
-        response = requests.post(url, json=payload)
-        response_data = response.json()
-        
-        # Check if the request was successful
-        if "msg" in response_data:
-            tx_hash = response_data["msg"]
-            print(Fore.GREEN + f"Faucet claim successful for {wallet_address}, TxHash: {tx_hash}")
-        else:
-            print(Fore.RED + f"Faucet claim failed for {wallet_address}, Response: {response_data}")
-    
-    except Exception as e:
-        print(Fore.RED + f"Error claiming faucet for {wallet_address}: {str(e)}")
 
 # Function to perform periodic task (including faucet claim)
 def perform_periodic_task():
