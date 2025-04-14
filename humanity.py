@@ -120,8 +120,7 @@ def proceed_to_claim(sender_address, private_key):
 
             
             # Wait 1 minute before claiming for the next wallet
-            print(Fore.CYAN + "Waiting 1 minute before claiming for the next wallet...")
-            time.sleep(60)
+
 
         # Optionally add other periodic tasks here, if needed
 
