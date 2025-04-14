@@ -129,8 +129,7 @@ if __name__ == "__main__":
     display_header()
 
     # Start the periodic task in a separate thread
-    periodic_task_thread = threading.Thread(target=perform_periodic_task, daemon=True)
-    periodic_task_thread.start()
+
     
     # Infinite loop to run the process every 6 hours (claiming rewards)
     while True:
