@@ -92,7 +92,7 @@ if __name__ == "__main__":
             for pk in keys:
                 claim_rewards(pk)
 
-            print(Fore.CYAN + "\n⏳ Menunggu 6 jam sebelum klaim berikutnya...\n")
+            print(Fore.CYAN + "\n⏳ Menunggu 6 jam sebelum klaim berikutnya... Jangan Lupa Join Channel Kita untuk informasi Airdrop https://t.me/airdropseeker_official\n")
             time.sleep(6 * 60 * 60)
 
     except KeyboardInterrupt:
