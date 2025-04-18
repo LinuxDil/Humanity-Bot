@@ -10,7 +10,7 @@ init(autoreset=True)
 def display_header():
     print(Fore.CYAN + Style.BRIGHT + "===============================")
     print(Fore.YELLOW + Style.BRIGHT + "Auto Daily Claim $RWT Humanity Protocol")
-    print(Fore.CYAN + Style.BRIGHT + "Bot created by: Bang Alex")
+    print(Fore.CYAN + Style.BRIGHT + "Bot created by: WIN")
     print(Fore.YELLOW + Style.BRIGHT + "Join Our Channel at: " + Fore.GREEN + "https://t.me/airdropseeker_official")
     print(Fore.CYAN + Style.BRIGHT + "===============================\n")
 
