@@ -3,7 +3,7 @@ import sys
 from web3 import Web3
 from colorama import init, Fore, Style
 
-# Init colorama
+# Init colorama nya ges
 init(autoreset=True)
 
 # Header info
