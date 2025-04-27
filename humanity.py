@@ -6,7 +6,7 @@ from colorama import init, Fore, Style
 # Init colorama nya ges
 init(autoreset=True)
 
-# Header info
+# Header info dude
 def display_header():
     print(Fore.CYAN + Style.BRIGHT + "===============================")
     print(Fore.YELLOW + Style.BRIGHT + "Auto Daily Claim $RWT Humanity Protocol")
