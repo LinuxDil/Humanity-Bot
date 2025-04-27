@@ -2,6 +2,7 @@ import time
 import sys
 from web3 import Web3
 from colorama import init, Fore, Style
+import random
 
 # Init colorama nya ges
 init(autoreset=True)
@@ -73,7 +74,7 @@ def proceed_to_claim(sender_address, private_key):
         })
 
         signed_tx = web3.eth.account.sign_transaction(transaction, private_key)
-        tx_hash = web3.eth.send_raw_transaction(signed_tx['rawTransaction'])
+        tx_hash = web3.eth.send_raw_transaction(signed_tx.raw_transaction)
 
         print(Fore.CYAN + f"⏳ Menunggu konfirmasi untuk transaksi: {web3.to_hex(tx_hash)}")
         receipt = web3.eth.wait_for_transaction_receipt(tx_hash, timeout=180)
@@ -81,7 +82,6 @@ def proceed_to_claim(sender_address, private_key):
 
     except Exception as e:
         print(Fore.RED + f"⚠️ Gagal memproses klaim untuk {sender_address}: {str(e)}")
-
 
 # Main
 if __name__ == "__main__":
@@ -91,6 +91,9 @@ if __name__ == "__main__":
             keys = load_private_keys('private_keys.txt')
             for pk in keys:
                 claim_rewards(pk)
+                delay = random.randint(10, 30)  # <--- Delay random antara 10 sampai 30 detik
+                print(Fore.MAGENTA + f"⏳ Menunggu {delay} detik sebelum lanjut ke akun berikutnya...\n")
+                time.sleep(delay)
 
             print(Fore.CYAN + "\n⏳ Menunggu 6 jam sebelum klaim berikutnya... Jangan Lupa Join Channel Kita untuk informasi Airdrop https://t.me/airdropseeker_official\n")
             time.sleep(6 * 60 * 60)
