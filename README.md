@@ -1,4 +1,4 @@
-# Humanity-Bot
+# Humanity Bot
 Auto Claim Reward Daily
 ---
 How to Run the Script? Join our Channel at https://t.me/airdropseeker_official and find the tutorial!
