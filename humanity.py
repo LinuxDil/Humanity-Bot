@@ -4,7 +4,7 @@ from web3 import Web3
 from colorama import init, Fore, Style
 import random
 
-# Init colorama nya ges.
+# Init colorama nya
 init(autoreset=True)
 
 # Header info dude
